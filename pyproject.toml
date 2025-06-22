@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=65.5.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "money-team"
+version = "0.1.0"
+description = "Forex trading pattern detection toolkit for AI agents"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "bs4>=0.0.2",
+    "crewai[tools]>=0.117.1",
+    "feedparser>=6.0.11",
+    "yfinance>=0.2.57",
+    "pandas>=2.0.3",
+    "numpy>=1.24.3",
+    "scipy>=1.11.1",
+    "google-generativeai>=0.8.5",
+    "selenium>=4.32.0",
+    "langchain-google-genai>=2.0.10",
+    "youtube-transcript-api>=1.0.3",
+    "webdriver-manager>=4.0.2",
+    "langchain-nvidia-ai-endpoints>=0.3.9",
+    "urllib3>=2.4.0",
+    "requests>=2.32.3",
+]
+
+[tool.setuptools]
+packages = ["tools.forex.patterns"]
+include-package-data = true
+
+
